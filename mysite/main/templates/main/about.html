@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <!-- about section -->
+
+  <section class="about_section layout_padding">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-10 ml-auto pr-0">
+          <div class="about_container">
+            <div class="row">
+              <div class="col-lg-3 col-md-5">
+                <div class="detail-box">
+                  <div class="heading_container">
+                    <h2>
+                      {{ about.name }}
+                    </h2>
+                  </div>
+                  <p>
+                    {{ about.description }}
+                  </p>
+                  <hr />
+                  <a href="">
+                    {{ about.button_name }}
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end about section -->
+
+  {% endblock %}

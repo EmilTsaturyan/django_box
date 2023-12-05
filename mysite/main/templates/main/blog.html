@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<!-- blog section -->
+
+  <section class="blog_section layout_padding">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-10 ml-auto">
+          <div class="heading_container">
+            <h2>
+              {{ blog_first.name }}
+            </h2>
+            <p>
+              {{ blog_first.description }}
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 pl-0">
+          <div class="box b1">
+            <div class="img-box">
+              <img src="{% blog_image.image.url %}" alt="">
+            </div>
+            <div class="row">
+              <div class="col-lg-8 col-md-10 ml-auto">
+                <div class="detail-box">
+                  <div class="img_date">
+                    <h6>
+                      {{ blog_image.date }}
+                    </h6>
+                  </div>
+                  <h3>
+                    {{ blog_image.name }}
+                  </h3>
+                  <p>
+                    {{ blog_image.description }}
+                  </p>
+                  <a href="">
+                    {{ blog_image.button_name }}
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end blog section -->
+  {% endblock %}
